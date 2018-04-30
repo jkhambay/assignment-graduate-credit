@@ -9,7 +9,7 @@ Pre-requisites:
 4.	Update connect string in app.js
 5.	Pug template engine
 
-Express generator can be used. Starter code is available at: https://github.com/jkhambay/assignment-graduate-credit-jkhambay
+Express generator can be used. Starter code is available at: https://github.com/jkhambay/assignment-graduate-credit-jkhambay and the practice code is at https://github.com/jkhambay/assignment-graduate-credit-jkhambay/blob/master/controllers/addressbookController.js
 
 The starter code provides the following completed files: 
 1.	app.js
@@ -18,3 +18,9 @@ The starter code provides the following completed files:
 4.	models
 
 The only file that needs to be completed is addressbookController.js, by implementing a function for each of the operations/routes that are stated in the starter code. There should not be a need to change any other file to make this work.
+
+Solution:
+
+The solution is available at: https://github.com/jkhambay/assignment-graduate-credit-jkhambay/blob/master/solution/addressbookController.js
+
+This file can be copied to controllers directory to replace the practice addressbookController.js
