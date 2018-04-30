@@ -1,0 +1,93 @@
+extends layout
+
+block content
+    h2 Find:
+    for contact in contacts
+        li 
+            p [ Id: #{contact._id} || Name: #{contact.name} || Address: #{contact.address} || Phone: #{contact.phone} ]
+    else    
+        p Add a contact to the list!    
+    
+    h2 Save:
+    form(action="/addressbook/create" method="post")
+        label(for="name")
+            p Name:
+                input#name(type="text" name="name" value="" size="25")
+        label(for="address")
+            p Address:
+                input#address(type="text" name="address" value="" size="25")
+        label(for="phone")
+            p Phone:
+                input#phone(type="text" name="phone" value="" size="25")
+        input#subBtn(type="submit" name="submit" value="Save")
+        
+    h2 FindById:
+    form(action="/addressbook/findById/" method="post")
+        label(for="id")
+            p Id:
+                input#id(type="text" name="id" value="" size="25")
+        input#subBtn(type="submit" name="submit" value="FindById")
+        
+    h2 FindByIdAndUpdate:
+    form(action="/addressbook/findByIdAndUpdate/" method="post")
+        label(for="id1")
+            p Id [Required]:
+                input#id(type="text" name="id1" value="" size="25")
+        label(for="name1")
+            p Name:
+                input#name(type="text" name="name1" value="" size="25")
+        label(for="address1")
+            p Address:
+                input#address(type="text" name="address1" value="" size="25")
+        label(for="phone1")
+            p Phone:
+                input#phone(type="text" name="phone1" value="" size="25")
+        input#subBtn(type="submit" name="submit" value="FindByIdAndUpdate")
+    
+    h2 FindByIdAndRemove:
+    form(action="/addressbook/findByIdAndRemove/" method="post")
+        label(for="id2")
+            p Id:
+                input#id(type="text" name="id2" value="" size="25")
+        input#subBtn(type="submit" name="submit" value="FindByIdAndRemove")
+        
+    h2 FindOne:
+    form(action="/addressbook/findOne/" method="post")
+        label(for="name3")
+            p Name:
+                input#id(type="text" name="name3" value="" size="25")
+        input#subBtn(type="submit" name="submit" value="FindOne")
+        
+    h2 FindOneAndUpdate:
+    form(action="/addressbook/findOneAndUpdate/" method="post")
+        label(for="name4")
+            p Name [Required]:
+                input#name(type="text" name="name4" value="" size="25")
+        label(for="address4")
+            p Address:
+                input#address(type="text" name="address4" value="" size="25")
+        label(for="phone4")
+            p Phone:
+                input#phone(type="text" name="phone4" value="" size="25")
+        input#subBtn(type="submit" name="submit" value="FindOneAndUpdate")
+        
+    h2 FindOneAndRemove:
+    form(action="/addressbook/findOneAndRemove/" method="post")
+        label(for="name5")
+            p Name:
+                input#id(type="text" name="name5" value="" size="25")
+        input#subBtn(type="submit" name="submit" value="FindOneAndRemove")
+        
+    h2 DeleteOne:
+    form(action="/addressbook/deleteOne/" method="post")
+        label(for="name6")
+            p Name:
+                input#id(type="text" name="name6" value="" size="25")
+        input#subBtn(type="submit" name="submit" value="DeleteOne")
+            
+    h2 DeleteMany:
+    form(action="/addressbook/deleteMany/" method="post")
+        label(for="name7")
+            p Name:
+                input#id(type="text" name="name7" value="" size="25")
+        input#subBtn(type="submit" name="submit" value="DeleteMany")

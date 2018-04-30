@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h2 Contact:
+    li 
+        p [ Id: #{contact._id} || Name: #{contact.name} || Address: #{contact.address} || Phone: #{contact.phone} ]
+    a(href='/addressbook/')
+        button(type="button") Back 
+    
+    
