@@ -1,6 +1,6 @@
 Controllers for CRUD Operations:
 
-This exercise problem/express application gives you practice of writing controllers for 9 CRUD operations using mongoose/MongoDB, namely save, findById, findByIdAndUpdate, FindByIdAndRemove, FindOne, FindOneAndUpdate, FindOneAndRemove, DeleteOne and DeleteMany. The "find" operation is implemented as an example. The application is an address book where once can create / read / update / delete a contact. There are 3 fields for each contact - name, address and phone.
+This exercise problem/express application gives you practice of writing controllers for 9 CRUD operations using mongoose/MongoDB, namely save, findById, findByIdAndUpdate, FindByIdAndRemove, FindOne, FindOneAndUpdate, FindOneAndRemove, DeleteOne and DeleteMany. The "find" operation is implemented as an example. The application is an address book where one can Create / Read / Update / Delete a contact. There are 3 fields for each contact - name, address and phone.
 
 Pre-requisites:
 1.	Execute "npm install" in your terminal after downloading the starter code
